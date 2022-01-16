@@ -6,17 +6,13 @@ import Dicas from "../Components/Dicas_component";
 import Botao_Dica from "../Components/Botao_Dica";
 import Botao_Home from "../Components/Botao_Home";
 import Botao_Perfil from "../Components/Botao_Perfil";
-<<<<<<< HEAD
 import Sensor from "../Components/Sensor";
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
-=======
->>>>>>> 4480eda0772e64ef04174da684124cb2b2767383
 
 
 const Main_Screen = ({navigation}) => {
 
-<<<<<<< HEAD
     const [nome_utilizador, setNomeUtilizador] = useState("");
 
     AsyncStorage.getItem('key').then(value =>{
@@ -26,9 +22,6 @@ const Main_Screen = ({navigation}) => {
             console.log(value);
         }
     });
-=======
-    const [nome_utilizador, setNomeUtilizador] = useState("Nome");
->>>>>>> 4480eda0772e64ef04174da684124cb2b2767383
 
     function Click_Dicas() {
         console.log("Clicou botao dicas");
@@ -55,7 +48,6 @@ const Main_Screen = ({navigation}) => {
 
             <View style = {styles.container_scroll}>
 
-<<<<<<< HEAD
                 <View style = {styles.container_sensor}>
                     <Text style= {styles.texto_sensor}>
                         Sensor
@@ -64,9 +56,6 @@ const Main_Screen = ({navigation}) => {
                     < Sensor ativo = "on" />
 
                 </View>
-=======
-                
->>>>>>> 4480eda0772e64ef04174da684124cb2b2767383
 
             </View>
 
@@ -105,7 +94,7 @@ const styles = StyleSheet.create({
         padding: 15,
     },
 
-    texto_confira_dicas: {
+    texto_confira_dicas: {
         top: -20,
         fontSize: 20,
         color: "black",
@@ -126,7 +115,6 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignContent: "space-between",
         alignItems: "center",
-<<<<<<< HEAD
     },
 
     container_sensor: {
@@ -144,8 +132,5 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
     },
 
-=======
-    }
->>>>>>> 4480eda0772e64ef04174da684124cb2b2767383
     
 });

@@ -6,7 +6,6 @@ import Icon_login from "../Components/Icon_login";
 import Botao_Numeros_Login from "../Components/Botao_Numeros_Login";
 import Botao_Entrar_Login from "../Components/Botao_Entrar_Login";
 import Botao_Registo_Login from "../Components/Botao_Registo_Login";
-<<<<<<< HEAD
 import Botao_limpar from "../Components/Botao_limpar";
 
 import {} from "firebase/firestore";
@@ -28,8 +27,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-=======
->>>>>>> 4480eda0772e64ef04174da684124cb2b2767383
 
 
 import Text_Input_Register from "../Components/Text_Input_Register";
@@ -59,7 +56,6 @@ const Screen_login = ({navigation}) => {
             setCodigo_4("true");
         }
     }
-<<<<<<< HEAD
     function Click_Limpar(e){
         console.log("Botao limpar");
         if( numeros_marcados > 1){
@@ -95,8 +91,6 @@ const Screen_login = ({navigation}) => {
         
 
     }
-=======
->>>>>>> 4480eda0772e64ef04174da684124cb2b2767383
 
     function Click_1(e) {
         if( numeros_marcados <= 4 ) {
@@ -183,7 +177,6 @@ const Screen_login = ({navigation}) => {
         console.log(email);
         console.log(codigo);
 
-<<<<<<< HEAD
         const q = query(collection(db, "users"), where("email", "==", email));
 
         getDocs(q).then(querySnapshotEmail =>{
@@ -211,10 +204,6 @@ const Screen_login = ({navigation}) => {
             }
         })
 
-=======
-        //=======================================
-        navigation.navigate("Main_Screen");
->>>>>>> 4480eda0772e64ef04174da684124cb2b2767383
     }
 
     function Click_Registo() {
@@ -222,11 +211,8 @@ const Screen_login = ({navigation}) => {
         navigation.navigate("Register_Screen");
     }
 
-<<<<<<< HEAD
     
 
-=======
->>>>>>> 4480eda0772e64ef04174da684124cb2b2767383
     return (
         <View style = {styles.ecra_total}>
 
@@ -282,17 +268,12 @@ const Screen_login = ({navigation}) => {
 
             <View style = {styles.container_botoes_row}>
 
-<<<<<<< HEAD
                 < Botao_limpar tipo = {"limpar"} texto = {"0"} funcao = {Click_Limpar} />
 
                 < Botao_Numeros_Login texto = {"0"} funcao = {Click_0}  />
 
                 < Botao_limpar tipo = {"undo"} texto = {"0"} funcao = {Click_Limpar} />
 
-=======
-                < Botao_Numeros_Login texto = {"0"} funcao = {Click_0}  />
-
->>>>>>> 4480eda0772e64ef04174da684124cb2b2767383
             </View>
 
             <View style = {styles.container_Entrar}>
@@ -324,10 +305,7 @@ const styles = StyleSheet.create({
     ecra_total:{
         flex: 1,
         backgroundColor: cores.fundo_ecra,
-<<<<<<< HEAD
         alignItems: "center",
-=======
->>>>>>> 4480eda0772e64ef04174da684124cb2b2767383
     },
 
     container_Email: {

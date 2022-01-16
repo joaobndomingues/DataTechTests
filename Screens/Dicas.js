@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
         padding: 15,
     },
 
-    texto_confira_dicas: {
+    texto_confira_dicas: {
         top: -20,
         fontSize: 20,
         color: "black",
